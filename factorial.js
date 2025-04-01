@@ -11,7 +11,7 @@ export default function factorial(number) {
     if(number < 0) {
         throw new RangeError("function expects only positive numbers")
     }
-
+    
      if (!Number.isInteger(number)) {
        throw new TypeError("function expects only positive integers");
      }
@@ -26,5 +26,5 @@ export default function factorial(number) {
   return result;
 }
 
-// console.log(factorial(1.1));
+// console.log(factorial(7.0));
 

@@ -46,6 +46,10 @@ describe("Factorial Function for Positive Integers", function () {
           TypeError,
           "function expects only positive integers";
       });
+
+      it("factorial(7.0) return 5040", function () {
+        assert.strictEqual(factorial(7.0), 5040)
+      });
     });
 
     describe("Non-Numeric", function () {
