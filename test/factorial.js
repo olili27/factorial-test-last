@@ -37,4 +37,15 @@ describe("Factorial Function for Positive Integers", function () {
             "function expects only positive integers";
         });
     })
+
+    describe("Non-Numeric", function () {
+      it("factorial('tim') should throw an error `function expects only numbers`", function () {
+        assert.throws(function () {
+          factorial("tim");
+        }),
+          Error,
+          "function expects only numbers";
+      });
+
+    });
 });
