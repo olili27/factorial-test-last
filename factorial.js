@@ -26,5 +26,5 @@ export default function factorial(number) {
   return result;
 }
 
-console.log(factorial(4));
+// console.log(factorial(4));
 
