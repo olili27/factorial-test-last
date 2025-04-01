@@ -47,5 +47,13 @@ describe("Factorial Function for Positive Integers", function () {
           "function expects only numbers";
       });
 
+      it("factorial('') should throw an error `function expects only numbers`", function () {
+        assert.throws(function () {
+          factorial("");
+        }),
+          Error,
+          "function expects only numbers";
+      });
+
     });
 });
