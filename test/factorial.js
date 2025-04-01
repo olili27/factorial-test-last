@@ -25,7 +25,7 @@ describe("Factorial Function for Positive Integers", function () {
           assert.throws(function () {
             factorial(-1);
           }),
-            Error,
+            RangeError,
             "function expects only positive numbers";
         });
 
@@ -33,10 +33,20 @@ describe("Factorial Function for Positive Integers", function () {
           assert.throws(function () {
             factorial(-21);
           }),
-            Error,
+            RangeError,
             "function expects only positive numbers";
         });
     })
+
+    describe("Floats", function () {
+      it("factorial(1.1) should throw an error `function expects only positive integers`", function () {
+        assert.throws(function () {
+          factorial(1.1);
+        }),
+          TypeError,
+          "function expects only positive integers";
+      });
+    });
 
     describe("Non-Numeric", function () {
       it("factorial('tim') should throw an error `function expects only numbers`", function () {
