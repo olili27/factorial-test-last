@@ -13,7 +13,7 @@ export default function factorial(number) {
     }
 
      if (!Number.isInteger(number)) {
-       throw new RangeError("function expects only positive integers");
+       throw new RangeError("function expects only integers");
      }
 
 
