@@ -19,4 +19,14 @@ describe("Factorial Function for Positive Integers", function () {
             assert.strictEqual(factorial(13), 6227020800);
           });
     });
+
+    describe("Negative Integers", function() {
+        it("factorial(-1) should throw an error `function expects only positive integers`", function () {
+          assert.throws(function () {
+            factorial(-1);
+          }),
+            Error,
+            "function expects only positive integers";
+        });
+    })
 });
