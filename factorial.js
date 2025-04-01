@@ -6,9 +6,12 @@
 export default function factorial(number) {
   let result = 1;
 
-  for (let count = number; count > 0; count--) {
+  for (number; number > 0; number--) {
     result = result * number;
   }
 
   return result;
 }
+
+console.log(factorial(4));
+
