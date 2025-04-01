@@ -9,10 +9,14 @@ export default function factorial(number) {
     }
 
     if(number < 0) {
-        throw new RangeError("function expects only positive integers")
+        throw new RangeError("function expects only positive numbers")
     }
 
-    
+     if (!Number.isInteger(number)) {
+       throw new RangeError("function expects only positive integers");
+     }
+
+
   let result = 1;
 
   for (number; number > 0; number--) {
