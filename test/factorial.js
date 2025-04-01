@@ -28,5 +28,13 @@ describe("Factorial Function for Positive Integers", function () {
             Error,
             "function expects only positive integers";
         });
+
+        it("factorial(-21) should throw an error `function expects only positive integers`", function () {
+          assert.throws(function () {
+            factorial(-21);
+          }),
+            Error,
+            "function expects only positive integers";
+        });
     })
 });
