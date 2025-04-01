@@ -10,5 +10,9 @@ describe("Factorial Function for Positive Integers", function () {
         it("factorial(1) should return 1", function () {
           assert.strictEqual(factorial(1), 1);
         });
+
+         it("factorial(4) should return 24", function () {
+           assert.strictEqual(factorial(4), 24);
+         });
     });
 });
