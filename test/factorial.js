@@ -71,7 +71,7 @@ describe("Factorial Function for Positive Integers", function () {
         function () {
           factorial("tim");
         },
-        Error,
+        TypeError,
         "function expects only numbers",
       );
     });
@@ -81,7 +81,7 @@ describe("Factorial Function for Positive Integers", function () {
         function () {
           factorial("");
         },
-        Error,
+        TypeError,
         "function expects only numbers",
       );
     });
